@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
+html,
+body{
+font-family: Raleway;
+margin:0;
+box-sizing: border-box;
+} 
+
+/* Flexbox*/
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexaround {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.flexbetween {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.flex-columun-center {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-columun-around {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+   
+} 
+
+.flex-columun-between {
+   display: flex;
+   flex-direction:column;
+   justify-content: space-between;
+  
+} 
+.Flexend {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end
+}
+
+.body{
+    Margin :0px;
+    
+}
+/*Text*/
+.TittleHeader {
+    font-family: 'Shrikhand', 'cursive';
+}
+
+.Text {
+    font-family: 'Roboto', sans-serif;
+}
+.Text-Titlehomepage-margin {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 1px;
+}
+.Text-ssTitlehomepage-margin{
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+/*color*/
+.backcolor-white { 
+    background-color: rgb(255, 250, 250);
+    box-shadow: 0px 2px 2px 0.5px #aeaeae;
+    height: 60px;
+    margin: 0px;
+    width: 100%;
+    padding: 0
+;
+}
+.backcolor-lightgray {
+    background-color: #f6f6f6;
+    
+}
+.backcolor-lightgraycard {
+    background-color: rgb(234, 234, 234);
+}
+.color-grey {
+    color: rgb(64, 64, 64);
+}
+.color-location-paris{
+    background-color: rgb(230, 230, 230);
+    height: 50px;
+}
+/*Position ordre de priorité des éléments relative fait passer le header devant la div localisation et le radius est visible*/
+.Postion-header
+{position: relative;} 
+
+
+/*Icone*/
+.location-icon {
+    margin-right: 10px;
+}
+
+/* Boutton index  & decoration*/
+ 
+
+.background-color-button { 
+    color: white;
+    font-weight: 300;
+    padding: 17px 20px 17px 20px;
+    background-image: linear-gradient(#FF79DA ,#9356DC );
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0px 2px 2px 0.5px rgb(187, 186, 186);
+    /*agrandissement plus smooth lorsque le curseur passe sur le boutton*/
+    transition: 150ms;
+    margin-bottom: 50px;
+    font-size: 15px;
+    
+   
+}
+.background-color-button:hover { 
+    /*grossis le boutton lorsque la souris passe dessus.*/
+    cursor: pointer;
+    transform: scale(1.05);
+    opacity: 0.87;
+
+}
+/* FONCTIONNEMENT & listes*/
+.fonctionnement{
+    
+    padding-top: 40px;
+    margin-left: 6%;
+    margin-right: 30px;
+}
+
+
+.list{
+    position: relative;
+    counter-reset: etape ;
+    background-color:  rgb(241, 241, 241);
+    padding: 1rem 2rem;
+    border: none;
+    flex-grow: 1;
+    border-radius: 18px;
+    box-shadow: 2px 1px 10px -3px rgb(187, 186, 186);
+}
+
+.list:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    background-color: #dcc8ef;
+    opacity: 0.7;
+
+
+}
+
+.iconcolor {
+    color:black
+
+}
+.iconcolor :hover{
+   color:#9356DC;
+   color:#9356DC;
+   text-decoration-color: #9356DC;
+   
+}
+
+/*Coeur*/
+.heartposition {
+    position: absolute;
+    top: 0;
+    right: 7%;
+}
+
+.heartposition-menus {
+    position: absolute;
+    top: 75.5% ;
+    right: 7%;
+}
+
+.heartsize {
+    font-size: 2rem;
+
+}
+
+
+.gradient-heart{
+    color: transparent;
+ 
+}
+
+.gradient-heart:hover{
+    color: transparent;
+    background-image: linear-gradient(#FF79DA , #9356DC );
+    background-clip: text;
+    -webkit-background-clip: text;
+    cursor: pointer;
+    transform: scale(1.09);
+    transition-property: width;
+    transition-duration: 17s;
+         
+} 
+.fas :hover {
+    color:#9356DC;
+    color:#9356DC;
+    text-decoration-color: #9356DC;
+}
+.ulist-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    position: relative;
+    margin-left: 7.5%;
+    margin-right: 6%;
+    padding-bottom: 50Px;
+  
+}
+.numberlistdecoration {
+    color: white;
+    background-color: #9356DC;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px ;
+    position: absolute;
+    /* position: relative; */
+    left: -1rem;
+    bottom: 0.5rem;
+    
+}
+.margin-icon {
+    margin-right: 15px;
+}
+
+/* Élements des pages Restaurants*/
+
+
+.positionrelativefleche{
+    position: relative;
+}
+.fleche::before{
+position: absolute;
+left: 2rem;
+height: 13rem;
+width: 2rem;
+top: 3.5%;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: translateY(-50%);
+font-size: 1.5rem;
+color: #000;
+}
+
+.size-restaurants {
+    /*Flex 2 prendra 2X plus de place que size populaire*/
+     flex: 2;
+     height: 650px;
+     margin-right: 20px;
+     border-radius: 10px;
+ }
+ .size-popular
+ {
+     flex: 1;
+     height: 650px;
+     margin-left: 20px;
+     border-radius: 10px;
+ }
+ .bloc-restaurants  {
+     padding-right: 20px;
+     padding-left: 20px;
+    
+ }
+ .first-bloc{
+     margin-bottom: 10px;
+ }
+ .second-bloc{
+     margin-top: 10px;
+ }
+ /*Les cartes des pages restaurants*/
+ 
+ .card-restaurants {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 45%;
+    height: fit-content;
+    box-shadow: 5px 5px 5px 1px lightgrey
+ }
+ .card-restaurants:hover {
+    
+    transform: scale(1.01);
+ }
+ .card{ 
+    background-color: #fff;
+     border-radius: 1rem;
+     position: relative;
+     text-decoration: none;
+     color: inherit;
+     display: block;
+     }
+    .card__img{
+        background-size: cover;
+        background-position: center ;
+        width: 100%;
+        height: 120px;
+        border: 0 solid transparent;
+        box-shadow: none;
+        object-fit: cover;
+        border-radius: 1rem 1rem 0 0;
+    }
+ .card-detail-restaurants { 
+  width: 100%;
+  padding-left: 10px;
+  padding-bottom: 15px;
+ }
+
+.detaildescription-margin {
+    margin: 7px;
+} 
+/*icone nouveau*/
+ .text-newcolor {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    background-color:#99e2d0;
+    color: #1b6150;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    position: absolute;
+    top: 10px;
+ }
+
+ .imgrestaurants1 {
+     background-image:url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+     background-size: cover;
+     background-position: center ;
+     width: 100%;
+     height: 120px;
+     border-radius: 15px 15px 0 0;
+        
+  }
+
+
+  .imgrestaurants2 {
+    background-image:url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    
+ }
+
+ .imgrestaurants3 {
+    background-image:url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    
+ }
+
+ .imgrestaurants4 {
+    background-image:url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+    
+ }
+
+/*Liens carte*/
+
+/*Lots de 2 cartes*/
+.twofirst-Card {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2%;
+    
+}
+.twolastCards {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/*.contentcenter {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.contentcenter2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.contentcenter3 {
+      margin-left: 30px;
+    margin-right: 20px;
+}
+.restaurant {
+    position: relative;
+    right: -11px;
+}*/
+.contentcenter2 {
+    margin-left: 30px;
+  margin-right: 30px;
+  padding-bottom: 50Px;
+}
+
+/*Footer*/
+
+.footer{
+    height: 300px;
+    margin-top: 100px;
+
+ }
+ .footerbackcolor { 
+    background-color: #303030;
+    height: 190px;
+ }
+ .Text-White-color{
+    color: white;
+ }   
+    
+.Footer-icon-margin{
+    margin-right: 6px;
+}
+ .footersize {
+    height: 150px;
+ 
+}
+
+.divlink-foot {
+ margin-bottom: 5px;
+}
+
+
+ .blocfoot{
+    margin-left: 7%;
+    margin-right: 15%;
+ }
+ .blocfoot2 {
+    margin-right: 15% ;
+ }
+.linkcolor-footer {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.decoration_none {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+/*Page menus*/
+/*.souscategory-menucssgrid{
+    background: yellow;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+  @media screen (max-width: 1000px);
+   grid-template-columns:1fr ;
+   gap: 1rem;
+   background-color: #f6f6f6;
+}
+*/
+.souscategory-menucssgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    background-color: #f6f6f6;
+    padding-right: 50px;
+    padding-left: 50px;
+   
+}
+/*
+.souscategory-menuelements {
+    width: 90%;
+}*/
+    
+.TittleHeadeforPagemenu {
+    font-family: 'Shrikhand', 'cursive';
+
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+}
+.backcolorpagemenu{
+    background-color: #f6f6f6;
+    margin: 0;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 5%;
+    padding-bottom: 30px;
+    margin-top: -82px;
+} 
+.menucard{
+    
+    background-color: #fff;
+    
+    display: flex;
+    border-radius: 0.75rem;
+    margin: 1rem 0;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    cursor: pointer;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    animation: show 2s;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+.menus-grid-agencement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-category {
+
+   
+    display : grid;
+    grid-template-columns: repeat(3 , 1fr);
+    background: yellow;
+    border: 1px; 
+    border-color:red;
+    border:solid;
+
+}
+
+/*.menucard:hover
+    {transform: scale(1.05);
+    opacity: 90%;} 
+*/
+.flexdrescription-price{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 95%;
+}
+/*.commanderbutton{
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+}*/
+
+
+/*Page La palette du goût*/
+.Heardersection{
+    background-color: rgb(206, 206, 206);
+}
+.Backgroundimg{
+    width: 100%;
+    display: block;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center bottom;
+}
+.Backgroundimg2{
+    width: 100%;
+    display: block;
+    height: 70vh;
+    object-fit: cover;
+}
+/*Cartes et leurs éléments*/
+.positionR{
+    position:relative
+}
+.Margincarelements{
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.description-card-cut {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*    text-overflow: ellipsis sert a masqué les ecritures par trois petit points*/
+/*LOADER */
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    animation: fadeout 1s forwards;
+    animation-delay: .75s;
+ 
+
+  }
+  
+  .loader {
+    border: 4px solid #9356DC;
+    border-top: 4px solid #FF79DA;
+    border-bottom: 4px solid #99e2d0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes fadeout {
+    100% { opacity: 0; }
+  }
+/* Animation en différer*/
+.delay-0 {animation-delay: 0s;}
+.delay-1 {animation-delay: .2s;}
+.delay-2 {animation-delay: .3s;}
+
+.backcolor-white2 {
+    background-color:white;
+    height: 60px;
+    margin: 2px;
+    width: 100%;}
+.price{
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    position: relative;
+    bottom: -10px;
+    align-items: flex-end;
+    margin-left: 0.5rem;
+}
+
+
+@media (max-width: 1112px) {
+
+    
+}
+.agencement{    display: flex;
+align-items: center;
+justify-content: space-around;
+flex-wrap: wrap;
+flex-direction: row;
+}
+.Flex-card-detail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.Flexdescription-detail-price {
+    display: grid;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    align-content: flex-start;
+}
+
+
+/*ANIMATION*/
+
+
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.confirmationcheck{
+    display: flex;
+    align-items: center;
+    background: #99e2d0;
+    padding: 1rem;
+    width: 30px;
+    margin-right: -62px;
+    justify-content: space-around;
+    transition: margin-right 0.7s;
+}
+
+.itemgreen {
+    background: white;
+    aspect-ratio: 1/1;
+    width: 2rem;
+    border-radius: 1rem;
+    color: #99e2d0;
+    display: grid;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+
+.menucard:hover .confirmationcheck  {
+  
+    margin-right: 0px;
+}
+.menucard:hover .itemgreen 
+   {
+        animation-name: rotate;
+        animation-duration: 0.7s;
+        animation-iteration-count: 1;
+      }
+  /*Keyframes indique les état d'une animations , animation duration ça durée, animation iteration= le nombre  de fois ou elle se répéte.*/
+  @keyframes rotate {
+  0% {
+      transform: rotate(-256deg);
+    }
+  100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+/*Pseudo element */ 
+
+.pseudoelement-soustext {
+    content: "";
+    width: 3rem;
+    height: 0.25rem;
+    background-color: #99e2d0;
+  display: inline-block;
+    }
+
+.elements-sous-text::after{
+   
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: #99e2d0;
+        display: inline-block;
+        position: absolute;
+        left: 0rem;
+        top: 1.7rem;
+}
+.Marginbottom {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+  /*commande*/
+
+.commandbouton{
+    border: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    transition-duration: .25s;
+    box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
+    cursor: pointer;
+  
+
+}
+.commandbuttonflexcenter {
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.commandbouton:hover {
+    transform: scale(1.05);
+    opacity: 97%;
+    cursor: pointer;
+}
+
+@media  (max-width:797px) {
+    .ol-flex{
+    flex-direction: column;
+ }  
+ .twolastCards {
+    flex-direction: column;
+    width: 100%;
+ 
+ }
+ .twofirst-Card {
+    flex-direction: column;
+    width: 100%;
+    
+    
+ }
+ .card-detail-restaurants {
+    padding-left: 10px;
+    padding-bottom: 15px;
+   }
+ .card-restaurants {
+    width: 90%;
+    display: flex;
+    margin-bottom: 20px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 1px lightgrey;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.twofirst-Card {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: 0;}
+    .twolastCards {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-left: 0;
+    }
+    .souscategory-menucssgrid{
+        display: flex;
+        /* grid-template-columns: repeat(3,1fr); */
+        gap: 1rem;
+        background-color: #f6f6f6;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    }
